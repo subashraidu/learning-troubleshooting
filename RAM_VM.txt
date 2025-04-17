@@ -41,3 +41,11 @@ RAM in a VM is used to:
     Isolate workloads on the same physical machine
 
 If you're tuning VM specs, think of RAM as the workspace — the bigger it is, the more your VM can do efficiently.
+
+
+
+Linux commands to check ram
+
+free -h  --> Shows a quick overview of total, used, and available memory (in human-readable format):
+cat /proc/meminfo --> Displays detailed memory information directly from the system:
+top, htop --> Live view of memory usage by processes:
