@@ -1,0 +1,45 @@
+    Runs the Guest Operating System
+
+        The VM's OS (like Ubuntu, Windows, etc.) needs CPU power to function — booting, managing tasks, handling drivers, etc.
+
+    Executes Applications
+
+        Any process or app running inside the VM (like a web server, database, code compiler) uses CPU cycles.
+
+        More vCPUs = more tasks can be processed in parallel.
+
+    Handles Virtualization Overhead
+
+        The hypervisor (e.g., VMware, KVM, Hyper-V) uses CPU to manage virtualization tasks, like scheduling CPU time for each VM.
+
+    Multi-threading and Parallel Work
+
+        More CPUs (or vCPUs) help run multi-threaded apps faster. Think of it like more workers on the job.
+
+    Affects Performance, Responsiveness, and Throughput
+
+        Low CPU allocation = VM feels slow.
+
+        High CPU usage = risk of throttling, lag, or crashing.
+
+💡 Example Use Cases
+Workload Type	Recommended vCPU
+Lightweight web server	1 vCPU
+Medium web app or DB	2–4 vCPU
+Build server, ML tasks	4+ vCPU
+🔍 TL;DR:
+
+    The CPU in a VM powers everything — from the OS to your apps.
+    More CPU = better performance, especially for compute-heavy workloads.
+
+
+commands in Linux OS to find CPU usage.
+1. lscpu  --> This command provides detailed information about the CPU architecture. It doesn't show real-time usage but gives you a summary of your system's CPU capabilities.
+2. vmstat -->(Virtual Memory Statistics) shows system performance, including memory, CPU usage, and I/O statistics. It gives an overview of the system's current resource usage.
+3. htop --> htop is an interactive, user-friendly version of top, which shows detailed, real-time data on CPU usage, memory, and running processes. It’s more visually appealing and easier to interpret compared to top.
+
+
+Command	Description	Usage Example
+lscpu	Displays detailed CPU architecture information.	lscpu
+vmstat	Provides system statistics, including CPU usage.	vmstat 1 (updates every second)
+htop	Interactive process viewer showing real-time CPU usage and more.	htop
