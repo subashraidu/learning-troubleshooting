@@ -1,0 +1,43 @@
+ Purpose of RAM in a VM
+
+    Running the Guest OS
+
+        The guest operating system (like Ubuntu, Windows, etc.) inside the VM needs RAM to load and run.
+
+        Just like a regular computer, the OS uses memory for core services and background processes.
+
+    Running Applications
+
+        Any apps or services you run inside the VM (e.g., web servers, databases, IDEs) consume RAM.
+
+        More RAM means you can run more or heavier applications without performance issues.
+
+    Caching and Buffering
+
+        The OS and applications use RAM to cache frequently accessed data for faster performance.
+
+        For example, a database might store query results or indexes in memory to speed up access.
+
+    Swap Reduction
+
+        Adequate RAM helps avoid swapping to disk, which is much slower than RAM.
+
+        If a VM runs out of RAM, it may start using disk-based swap, which hurts performance.
+
+    Performance Isolation
+
+        Each VM is allocated a set amount of RAM, preventing one VM from hogging memory that could affect others on the same host.
+
+
+
+RAM in a VM is used to:
+
+    Run the guest OS and applications
+
+    Improve performance through caching
+
+    Avoid slow disk-based swapping
+
+    Isolate workloads on the same physical machine
+
+If you're tuning VM specs, think of RAM as the workspace — the bigger it is, the more your VM can do efficiently.
