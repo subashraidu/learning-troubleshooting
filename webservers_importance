@@ -1,0 +1,49 @@
+A web application needs a web server like Apache or Tomcat to handle the following core responsibilities:
+1. Serving HTTP Requests
+
+Web applications communicate using the HTTP protocol. A web server listens for incoming HTTP requests from clients (usually browsers), processes them, and sends back responses (like HTML pages, JSON data, etc.).
+
+    Apache HTTP Server: Handles static content (HTML, CSS, JS, images).
+
+    Apache Tomcat: Designed for serving Java-based dynamic content (e.g., JSP, Servlets).
+
+2. Processing Dynamic Content
+
+If your application generates pages or data dynamically (e.g., using Java, PHP, Python, etc.), the web server must route the request to an application runtime or interpreter. Tomcat, for example, runs Java web apps by executing Servlets and JSP files.
+3. Connection Management
+
+Web servers manage thousands of concurrent client connections, handling:
+
+    Request parsing
+
+    Response formatting
+
+    Persistent or keep-alive connections
+
+    Compression and caching
+
+4. Security Features
+
+They provide built-in security mechanisms:
+
+    HTTPS (SSL/TLS)
+
+    Access controls
+
+    Request filtering
+
+    Logging and monitoring
+
+5. Load Balancing and Scalability
+
+Many web servers support:
+
+    Load balancing across multiple servers
+
+    Reverse proxying
+
+    Integration with caching servers (e.g., Varnish)
+
+Summary
+
+Without a web server, a web application wouldn’t be accessible via a browser, wouldn’t be able to process requests, and wouldn’t scale or secure efficiently.
